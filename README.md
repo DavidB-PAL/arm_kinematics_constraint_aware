@@ -3,8 +3,8 @@
 This is a fork of the ROS Fuerte Ubuntu package installation of arm_kinematics_constraint_aware, <br>
 from the arm_navigation stack. <br>
 
-The Trunk has other changes that haven't been released into Fuerte yet: <br>
-https://code.ros.org/svn/wg-ros-pkg/stacks/kinematics/trunk/arm_kinematics_constraint_aware/
+Fuerte branch: <br>
+https://kforge.ros.org/armnavigation/armnavigation/file/ebdb3ee14a58/
 
 These fixes & modifications are for robots other than the PR2, but these changes have been tested to not break the simulated PR2 robot in ROS Fuerte Gazebo. <br>
 -- David Butterworth
