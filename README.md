@@ -14,15 +14,15 @@ These fixes & modifications are for robots other than the PR2, but these changes
 **Changelist:**
 
  - Fixed a segmentation fault. <br>
-&nbsp;&nbsp;&nbsp;The fk_link_names and pose_stamped members of the response in getPositionFK aren't allocated before use. <br>
-&nbsp;&nbsp;&nbsp;This fix originally reported: <br>
-&nbsp;&nbsp;&nbsp;https://code.ros.org/trac/ros-pkg/ticket/5497 <br>
-&nbsp;&nbsp;&nbsp;https://code.ros.org/trac/ros-pkg/ticket/5567
+The fk_link_names and pose_stamped members of the response in getPositionFK aren't allocated before use. <br>
+This fix originally reported: <br>
+https://code.ros.org/trac/ros-pkg/ticket/5497 <br>
+https://code.ros.org/trac/ros-pkg/ticket/5567
 
  - An enhancement, to restore the ability to use the FK (Forward Kinematics) routine from your kinematics plugin. <br>
-&nbsp;&nbsp;&nbsp;FK is now handled by ROS TF, by default. <br>
-&nbsp;&nbsp;&nbsp;When you launch the 'arm_constraint_kinematics_aware' node, you can specify an optional ROS Parameter 'use_plugin_fk=true'
-&nbsp;&nbsp;&nbsp;Reported at: <br>
-&nbsp;&nbsp;&nbsp;https://code.ros.org/trac/ros-pkg/ticket/5586
+Normally, FK is now handled by ROS TF, not your kinematics plugin!<br>
+With this fix, you can launch the 'arm_constraint_kinematics_aware' node and specify an optional ROS Parameter 'use_plugin_fk=true'
+Reported at: <br>
+https://code.ros.org/trac/ros-pkg/ticket/5586
 
 
